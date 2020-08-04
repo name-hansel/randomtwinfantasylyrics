@@ -143,6 +143,10 @@ button:hover {
 
 
 @media only screen and (max-width: 825px) {
+    .body {
+        width: 100vw;
+        overflow-x: none;
+    }
     .mainheading {
         font-size: 34px;
         text-align: center;
@@ -161,6 +165,7 @@ button:hover {
     .text {
         width: 100vw;
         margin: 0 auto;
+        margin-left: -15px;
         text-align: center;
     }
 }

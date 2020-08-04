@@ -109,6 +109,11 @@ button:hover {
     color: rgba(0,0,0,1);
 }
 
+#track {
+    font-family: 'Playfair Display', serif;
+    margin-top: -20px;
+}
+
 @media only screen and (max-width: 1000px) {
     .container {
         display: flex;

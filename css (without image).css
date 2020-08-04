@@ -37,19 +37,13 @@ a:link, a:visited{
 .content {
     margin:0 150px;
     text-align: center;
-    height: 300px;
+    height: 200px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
-    width: 500px;
-}
-
-#lyrics {
-    text-align: center;
-    font-size: 32px;
-    word-wrap: break-word;
-    white-space: pre-line;
+    overflow-wrap: normal;
+    transition: all 0.1s ease-in;
 }
 
 .button {
@@ -75,37 +69,6 @@ button:hover {
     color: black;
 }
 
-.text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 0 0;
-    margin-left: -20px;
-}
-
-.image {
-    flex: 0 0;
-    margin-right: -140px;
-    margin-left: -80px;
-    margin-top: 80px;
-}
-
-.container {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.warning {
-    font-family: 'Playfair Display', serif;
-    margin-top: -60px;
-    font-size: 13px;
-    color: rgba(0,0,0,0.2);
-    transition: color 0.2 cubic-bezier(.31,.48,.83,.51);
-}
-
-.warning:hover {
-    color: rgba(0,0,0,1);
+.content:hover {
+    font-size: 20px;
 }

@@ -1,4 +1,4 @@
-function getlyrics() {
+function changelyrics() {
     document.getElementById("lyrics").value = "";
     var request = new XMLHttpRequest();
     link = getURL();

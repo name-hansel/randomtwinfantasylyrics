@@ -47,7 +47,7 @@ a:link, a:visited{
 
 #lyrics {
     text-align: center;
-    font-size: 32px;
+    font-size: 26px;
     word-wrap: break-word;
     white-space: pre-line;
 }
@@ -81,13 +81,11 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex: 0 0;
-    margin-left: -20px;
+    margin-left: -160px;
 }
 
 .image {
     flex: 0 0;
-    margin-right: -140px;
-    margin-left: -80px;
     margin-top: 80px;
 }
 
@@ -96,6 +94,7 @@ button:hover {
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .warning {
@@ -108,4 +107,60 @@ button:hover {
 
 .warning:hover {
     color: rgba(0,0,0,1);
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .text {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .image {
+        text-align: center;
+    }
+    .mainheading {
+        font-size: 40px;
+        text-align: center;
+    }
+    .subheading {
+        font-size: 16px;
+        margin-top: -20px;
+    }
+    #date {
+        font-size: 10px;
+        margin-top: -16px;
+    }
+    #lyrics {
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 825px) {
+    .mainheading {
+        font-size: 34px;
+        text-align: center;
+    }
+    .subheading {
+        font-size: 18px;
+        margin-top: -20px;
+    }
+    #date {
+        font-size: 10px;
+        margin-top: -16px;
+    }
+    #lyrics {
+        font-size: 20px;
+    }
+    .text {
+        width: 100vw;
+        margin: 0 auto;
+        text-align: center;
+    }
 }

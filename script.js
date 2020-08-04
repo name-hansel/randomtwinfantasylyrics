@@ -11,7 +11,7 @@ function changelyrics() {
             /*number of lines*/
             var lines = getRandomInt(1,3);
             /*start of the phrase*/
-            var start = getRandomInt(1,list.length-lines)
+            var start = getRandomInt(1,list.length-lines-1)
             /*get lyrics*/
             var lyrics = ""
             for(let i=1;i<=lines;i++){

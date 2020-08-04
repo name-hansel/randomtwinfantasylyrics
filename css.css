@@ -8,25 +8,45 @@
 .mainheading {
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 46px;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.heading {
+    text-align: center;
 }
 
 .subheading {
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    margin-top: -20px;
+    margin-top: -30px;
+    font-style: italic;
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+#date {
+    margin-top: -36px;
     font-style: italic;
     font-weight: lighter;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .content {
     margin:0 150px;
     text-align: center;
     height: 200px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow-wrap: normal;
+    transition: all 0.1s ease-in;
 }
 
 .button {
@@ -35,17 +55,23 @@
 
 button {
     text-align: center;
-    font-size: 18px;
+    font-size: 12px;
     font-family: 'Raleway', sans-serif;
     margin-top: 50px;
     padding: 20px 26px;
     border-radius: 40px;
     border: 1px solid black;
-    background-color: white;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(.31,.48,.83,.51);
+    background-color: black;
+    color: white;
 }
 
 button:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+
+.content:hover {
+    font-size: 20px;
 }

@@ -3,7 +3,6 @@ function changelyrics() {
     document.getElementById("track").value = "";
     var request = new XMLHttpRequest();
     var x = getURL();
-    console.log(x[1])
     request.open('GET', x[0]);
     request.onreadystatechange = function () {
         if (this.readyState === 4) {

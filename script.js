@@ -19,6 +19,10 @@ function changelyrics() {
                 lyrics = lyrics + list[start] + "\n";
                 start++;
             }
+            // to remove "undefined" from lyrics
+            if(lyrics.includes("undefined")) {
+                lyrics = lyrics.replace("undefined","");
+            }
             /*set lyrics*/
             document.getElementById("lyrics").innerHTML = lyrics;
             document.getElementById("track").innerHTML = x[1];
